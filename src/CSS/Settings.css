@@ -1,0 +1,161 @@
+
+.settings-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Raleway', sans-serif;
+  color: #1e293b;
+}
+.settings-container {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.settings-container:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.settings-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+}
+
+.settings-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+  color: #0f172a;
+}
+
+.settings-section {
+  background: #f8fafc;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settings-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+.settings-section h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.settings-section h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 6px;
+  height: 26px;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #10b981, #22c55e);
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #334155;
+  font-size: 1rem;
+}
+
+.form-group input[type="number"],
+.form-group select {
+  padding: 1rem 1.25rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  font-size: 1rem;
+  background: #ffffff;
+  color: #1e293b;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+  background: #ffffff;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%236366f1' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  padding-right: 3rem;
+}
+.hint {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 0.25rem;
+}
+.settings-btn {
+  padding: 1rem 2.25rem;
+  background: linear-gradient(135deg, #6366f1, #9333ea);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settings-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5);
+}
+
+@media (max-width: 768px) {
+  .settings-container,
+  .settings-section {
+    padding: 1.5rem;
+  }
+
+  .settings-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .settings-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 0.95rem;
+  }
+}
